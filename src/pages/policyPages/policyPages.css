@@ -1,0 +1,17 @@
+.policyPageText{
+    text-align: center;
+    padding-top: 70px;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.policyPageContainers {
+    width: 70%;
+    margin: auto;
+}
+
+strong{
+    color: white;
+}

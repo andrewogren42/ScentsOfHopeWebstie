@@ -1,0 +1,18 @@
+#Listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+        #listings {
+        gap: 10%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #listings{
+        flex-direction: column;
+    }
+}

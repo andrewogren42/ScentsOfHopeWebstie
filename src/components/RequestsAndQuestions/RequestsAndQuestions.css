@@ -1,0 +1,92 @@
+#requestsQuestionsContainer{
+    display: flex;
+    margin: auto;
+    width: 70vw;
+    height: 90vh;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    padding-top: 70px;
+    gap: 20px;
+}
+
+#requestsUpperBox{
+    display: flex;
+    height: 80px;
+    gap: 10%;
+    width: 60%;
+}
+
+#nameBox, #phoneBox{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+}
+
+.textBoxDiv {
+    width: 60%;
+}
+
+#name, #phone, #email {
+    height: 50px;
+}
+
+#email, #comments{
+    width: 100%;
+}
+
+#comments{
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.textBox {
+    background-color: #68707d;
+    border-color:black;
+    border-radius: 5px;
+}
+.textBox::placeholder{
+    color: #a3a5a8;
+    opacity: 1;
+}
+
+#submitComment{
+    height: 50px;
+    width: 60%;
+    border: 1px solid white;
+    color: white;
+    background-color: #089654;
+    border-radius: 10px;
+}
+
+#submitComment:hover{
+    cursor: pointer;
+    color: #089654;
+    border: 1px solid #089654;
+    background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+     #requestsQuestionsContainer{
+        height: 100vh;
+    }
+
+    #requestsUpperBox{
+        flex-direction: column;
+        padding-bottom: 170px;
+    }
+
+    #nameBox, #phoneBox{
+        width: 100%;
+    }
+
+    #nameBox{
+        margin-bottom: 20px;
+
+    }
+}
+@media screen and (max-width: 650px) {
+    #requestsQuestionsContainer{
+        width: 100vw;
+    }
+}

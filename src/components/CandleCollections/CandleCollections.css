@@ -1,0 +1,85 @@
+#candleCollectionsContainer {
+    z-index: 1;
+    background-color: #0a7067;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    gap: 20px;
+    padding-top: 20px;
+}
+.candleCollection {
+    display: flex;
+    height: 70%;
+    width: 25%;
+    z-index: 2;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+    background-size: cover; 
+    background-position: center;
+}
+
+.candleCollection h2{
+    margin-top: -70px;
+}
+
+.candleCollection a {
+    margin-top: auto;
+    margin-bottom: 10%;
+}
+
+.collectionBtn {
+    background-color: #28c9bf;    
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.collectionBtn:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    color: #28c9bf;
+}
+#candleCollectionsFavorites {
+    background-image: url("/loveYouMore.jpeg");
+}
+#candleCollectionsHomeCollection {
+    background-image: url("/hugsAllAround.jpeg");
+}
+
+#candleCollectionsSeasonal{
+    background-image: url("/christmasHearth.jpeg");
+}
+
+@media screen and (max-width: 1000px){
+    .candleCollection{
+        height: 40%;
+        width: 40%;
+    }
+    #candleCollectionsContainer{
+        height: 140vh;
+        padding-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #candleCollectionsContainer {
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 200vh;
+        flex-direction: column;
+        padding-top: 80px;
+    }
+
+    .candleCollection {
+        width: 50%;
+        margin-bottom: 70px;
+    }
+}

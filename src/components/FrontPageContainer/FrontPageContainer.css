@@ -1,0 +1,19 @@
+#topOfPageContainer {
+    padding-top: 90px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #19abee;
+    }
+
+#frontPageLogo {
+    margin-top: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.frontPage {
+    color: white;
+    margin-bottom: 10px;
+}

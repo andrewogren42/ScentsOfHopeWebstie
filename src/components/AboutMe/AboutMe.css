@@ -1,0 +1,83 @@
+#aboutMeContainer {
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    background-color: #18b8aa;
+    padding-top:70px;
+}
+#aboutMeLeft {
+    flex-basis: 50%;
+    margin-right: 10px;
+    padding-left: 2.5%;
+    color: black;
+
+}
+#aboutMeRight {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    gap: 2.5%;
+}
+
+#aboutMePic, #Video{
+    width: 80%;
+    border-radius: 10px;
+    object-fit: contain;
+    max-height: 300px;
+    margin-left: 10%;
+}
+
+#charityLogos{
+    height: 30%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+#hope4CambodiaLogo, #IOHLogo {
+    width: 240px;
+}
+
+#hope4CambodiaLogo{
+    height: 240px;
+}
+
+#IOHLogo{
+    height: 130px;
+}
+
+@media screen and (max-width: 650px) {
+
+    #charityLogos{
+    flex-direction: column;
+    width: 100%;
+    gap: 0%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    }
+
+    #aboutMePic, #hope4CambodiaLogo, #IOHLogo, #Video{
+    width: 90%;
+    border-radius: 10px;
+    object-fit: contain;
+    max-height: 300px;
+    margin-left: 0%;
+    margin-bottom: 50px;
+    }
+
+    #aboutMeRight{
+        align-items: center;
+        flex-basis: 45%;
+        justify-content: center;
+    }
+
+    #aboutMeLeft{
+        flex-basis: 55%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #aboutMeContainer{
+        flex-direction: column;
+    }
+}
